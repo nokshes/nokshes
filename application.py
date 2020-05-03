@@ -8,7 +8,17 @@ def hello_world():
 
 @app.route("/signup", methods=['GET', 'POST'])
 def signup():
-    result = {"fulfillmentText": str(request.get_json(force=True))}
+    result = {
+            "fulfillmentText": str(request.get_json(force=True)),
+            "fulfillmentMessages": [
+                {
+                    "text": {
+                        "text": ["Text response from webhook"]
+                        }
+                    }
+                ]
+
+            }
     return make_response(jsonify(result))
 
 if __name__ == "__main__":
