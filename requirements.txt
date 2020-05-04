@@ -5,4 +5,5 @@ Jinja2
 MarkupSafe
 Werkzeug
 requests
+pyodbc
 facebook-sdk
