@@ -26,16 +26,16 @@ def signup():
     profile = graph.get_object(user_id)
     row = cursor.execute("SELECT reg_status from nokshesdb.dbo.t_" + unid[:7] + " where user_id = \'" + user_id + "\'").fetchone()
     if row != None:
-        text = "You are already registered."
+        text = ["You are already registered."]
     else:
-        text = f"Hey {profile['first_name']}, your request has been sent to CR. Wait for confirmation."
+        text = [f"Hey {profile['first_name']}, your request has been sent to CR. Wait for confirmation."]
 
     result = {
             "fulfillmentText": str(request.get_json(force=True)),
             "fulfillmentMessages": [
                 {
                     "text": {
-                        "text": [text]
+                        "text": text
                         }
                     }
                 ]
