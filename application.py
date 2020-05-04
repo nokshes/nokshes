@@ -35,7 +35,7 @@ def signup():
             "fulfillmentMessages": [
                 {
                     "text": {
-                        "text": text
+                        "text": [text]
                         }
                     }
                 ]
