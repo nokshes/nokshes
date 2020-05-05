@@ -1,7 +1,4 @@
 raw ideas:
-    1.subscriber will able to send message to the bot.
-      *users will get replies
-    2.bot will adapt to new questions or response.
     *admin system
         bot will abide by the admin(cr) by text.
         users will able to subscribe if admin approves.
@@ -15,6 +12,6 @@ raw ideas:
         bot can pull any previous notices.
         a routine will be saved, and bot will be able to answer any query about routine..including time, where,which room, which teacher.
         ot will remind subscriber...of any extra class, or any assignment submission day.
-        
+        bot will adapt to new questions.
     
     
