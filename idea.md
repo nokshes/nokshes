@@ -1,3 +1,6 @@
+***read it in raw mode or edit***
+
+
 #raw ideas:
     ##target
          >help cr to reach all of his classmates at 99% affinity. Anywhere,=..messenger,twitter or any other any platform.
