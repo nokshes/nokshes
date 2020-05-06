@@ -2,8 +2,11 @@
 
 The project architecture is divided into following segments:
 > Design Principles
+
 > Cloud Hosting Architecture
+
 > Chat Bot Services Architecture
+
 > API Architecture
 
 ## Design Principles
@@ -27,8 +30,9 @@ Azure Services will cost us fucking high on **every single read write operations
 
 ### Google Cloud Platform
 > Google Virtual Machine - Compute Engine
->>![Google VM Pricing](https://drive.google.com/uc?export=view&id=1t9BIZdbCs1wZavfLuiBPLF17eqOvUSlA
+>> ![Google VM Pricing](https://drive.google.com/uc?export=view&id=1t9BIZdbCs1wZavfLuiBPLF17eqOvUSlA)
 (N.B: Open image in a new tab)
+
 > Google App Engine + Cloud SQL + Cloud Storage
 > Although I have not calculated the cost, but I am sure that, we can get everything in $60 - $90 / month
 
@@ -37,21 +41,28 @@ Now why App Engines / App Services are viable options here when we can do everyt
 ## Chat Bot Service Architecture
 
 *In Progress...*
+
 [We need much more contribution please]
 
 ## API Architecture
 
 > Graph API Managing Interface
+
 > SQL Database Managing Interface
+
 > File Storage Managing Interface
+
 > The Main **REST API**
+
 
 ### The Main REST API
 The ultimate thing that we will focus on building is the REST API which will handle incoming requests from the Chat Bot. *(or from maybe other services which we will build in future)*
 The REST API will be written in **Node.js + Express.js web framework**
+
 > The reason I am abandoning **Python + Flask web architecture** is because its not asynchronous. It means we will only be able to handle one request per thread or in simple 16 concurrent requests.
+
 > And it will be a lot of pain in the ass to make a asynchronous web app in python and more pain in the back in making it portable in every cloud platform.
-> 
+
 > Where as in Node.js is by default asynchronous and can handle upto 10000 concurrent requests.
 >> Here is a reason why I don't like Node.js -> *Dependency hell*, a simple hello world project will be above 100MB.
 
