@@ -16,6 +16,7 @@
         >there will be multiple admin (atleast two) for each class.
         >each class and each admin will have code for security reason,*optional.
         >when any subscription request are made, admin will recieve the id, name and the fb id..admin have to varify it himself.
+        >we should also get the information abopt whom admin is i mean cr is giving permission 
         ***but it will be hard for the admin to handle many request. Have to come out some remedy***
                   >subscription code 
         >admin will be able to set importance rating
@@ -38,6 +39,18 @@
          >Nokshes will also help with bus service, which bus to take from it to the other place? iutchatbot can do that, we can relay info from there i suupose.. or dhaka wheels?
          >Nokshes will help user to find where to photocopy, where to print, where to eat, namaz time ( namaz koytay? )
          >Nokshes will hold information about teachers and provost
+         >Nokshes will also provide the copies of emails send by the register office, department, ict center etc.
+         >Nokshes will have questions of previous exams . We can upload the the questions after every exam and upload pictures from the library
+         >Nokshes can also serve as messaging api . Suppose If a user of cse department needs ab+ve blood he/she can submit the request to the admin then admin will review the request the if it is valid he or she can forward this message to all the subscribers.
+         ***A subscriber also can turn of this kind of mesasage . We should catagorize requests like help, book etc**
+         ***Club Information**
+         >Nokshes will also hold all the in formations about all the clubs
+         >It can provide links for all the pages of the clubs
+         ***Pages**
+         >Nokshes will also have a list of all public pages of IUT
+         >And provide short information about all these pages 
+         ***Reminder**
+         >Nokshes will be able to send reminders about any event , exam if a subscriber wants to receive
          ***Noksesh will help to find your rollmate***
          >Nokshes will help you find fb_ID based on iut id if.
          >Nokshes will help to recruit on any operation...such as photographer..graphic designer...dev..
