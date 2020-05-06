@@ -3,9 +3,9 @@
 
 # raw ideas:
 ## target
-> help cr to reach all of his classmates at 99% affinity. Anywhere,=..messenger,twitter or any other any platform.
-> make it more productive and not rely on checking importang stuff manully and make sure things dont get lost like it does in other group chat or group.
-> instant reply.. So user wont be in dispair and cant blame CR.
+> * help cr to reach all of his classmates at 99% affinity. Anywhere,=..messenger,twitter or any other any platform.
+> * make it more productive and not rely on checking importang stuff manully and make sure things dont get lost like it does in other group chat or group.
+> * instant reply.. So user wont be in dispair and cant blame CR.
 ***help newbies to learn about IUT by updating a database about common questions asked by BOROVAIs***
 ***a guide to freshers***
 ***we can also make an android app on demand***
