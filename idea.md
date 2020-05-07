@@ -13,12 +13,21 @@ help cr to reach all of his classmates at 99% affinity. Anywhere,=..messenger,tw
 ![Generic badge](https://img.shields.io/badge/PENDING-CLARIFICATION-ORANGE.svg)
 
 make it more productive and not rely on checking importang stuff manully and make sure things dont get lost like it does in other group chat or group. (List important stuffs other than notices)
+      ![ForTheBadge 20-30](http://ForTheBadge.com/images/badges/clarific-akshar.svg)](http://ForTheBadge.com)
+      >information about teachers and provost
+      >information about varsity
+      >information about students
+      >routine 
+      >questionbank
+      >drive link
+      >......
 
 ![Generic badge](https://img.shields.io/badge/PENDING-CLARIFICATION-ORANGE.svg)
 
 instant reply.. So user wont be in dispair and cant blame CR.
 (What is instant reply?)
-
+    ![ForTheBadge 20-30](http://ForTheBadge.com/images/badges/clari-akshar.svg)](http://ForTheBadge.com)
+    instant replies is, bot will reply user immediately...which cr cant handle,,thats why its nokshes is necessery
 ![Generic badge](https://img.shields.io/badge/FUTURE-PLAN-BLUE.svg)
 
 * we can also make an android app on demand
@@ -35,7 +44,8 @@ instant reply.. So user wont be in dispair and cant blame CR.
 
 admin will be able to set importance rating
 (What is importance rating? Needs context too.)
-
+    ![ForTheBadge 20-30](http://ForTheBadge.com/images/badges/clarifc-akshar.svg)](http://ForTheBadge.com)
+    admin will can tell which notice is more important by rating it, its not really necessery to be honest
 ## bot capabilities:*
 
 ![Generic badge](https://img.shields.io/badge/PENDING-IMPLEMENTATION-RED.svg)
@@ -45,7 +55,8 @@ bot will be able to separate group a and b.
 ![Generic badge](https://img.shields.io/badge/PENDING-CLARIFICATION-ORANGE.svg)
 
 bot will be able to forward attatchment from admin.
-
+    ![ForTheBadge 20-30](http://ForTheBadge.com/images/badges/clarification-akshar.svg)](http://ForTheBadge.com)
+    attatchments...such as picture link, video, sticker or such.
 ![Generic badge](https://img.shields.io/badge/PENDING-DISCUSSION-<>.svg)
 
 bot will relay request to admin and devs if uncapable.
@@ -55,7 +66,8 @@ bot will relay request to admin and devs if uncapable.
 bot can pull any previous notices.
 Nokshes will keep track of notices
 (How much older notices will we preserve)
-
+    ![ForTheBadge 20-30](http://ForTheBadge.com/images/badges/contrib-akshar.svg)](http://ForTheBadge.com)
+      one or two weeks tops, but we can deliver any universal notices(explained in catagory of notifications) via iut website
 ![Generic badge](https://img.shields.io/badge/PENDING-IMPLEMENTATION-RED.svg)
 
 * a routine will be saved, and bot will be able to answer any query about routine..including time, where,which room, which teacher.
@@ -66,6 +78,9 @@ Nokshes will keep track of notices
 
 bot will adapt to new questions.
 (Clearify what is new question and how it will be able to answer things like that?)
+    ![ForTheBadge 20-30](http://ForTheBadge.com/images/badges/clarific-akshar.svg)](http://ForTheBadge.com)
+    any kind of question... that bot couldn't understand or cant answer, devs should update the the intention library immediately. if a bot cant answer, the question should be forwarded to dev and then dev will take action to update it.
+    question such as, Who created you, how are you , what do you eat, it will be as humanly as possible.
 
 ![Generic badge](https://img.shields.io/badge/PENDING-DISCUSSION-<>.svg)
 
@@ -79,7 +94,9 @@ bot will make sure to make subscriber watch any important notice. Else it will k
 * Nokshes will send text or attatchments to all subscriber under the admin
 * Nokshes will notify about any major events
 (How do you describe major events)
-
+  ![ForTheBadge 20-30](http://ForTheBadge.com/images/badges/clarification-akshar.svg)](http://ForTheBadge.com)
+    notifications from admin will best only to the subscribers who subscribed under that certain admin,,,since ther can be several admins
+    major events such concerts, sports day, holiday, club day 
 ![Generic badge](https://img.shields.io/badge/PENDING-IMPLEMENTATION-RED.svg)
 
 * Nokshes will be a repository for essential files. Such as topshhet for assignment,logo,routines,assignment sheet ?
@@ -99,7 +116,12 @@ We should catagorize requests like help, book etc**
 
 ![Generic badge](https://img.shields.io/badge/PENDING-CONTRIBUTION-MAGENTA.svg)
 
-Categorize different types of notices
+       ![ForTheBadge 20-30](http://ForTheBadge.com/images/badges/contrib-akshar.svg)](http://ForTheBadge.com)
+        1. Local notification: these notifications will be from cr and they are about his class only.
+        2. Global notifications: which are about the institute and come directly from institute.
+        3. Nokshes notification: these are about nokshes, and from nokshes/devs. notificaions about subscription, updates.
+        4. Service notification: These are will be the alerts.
+
 
 ![Generic badge](https://img.shields.io/badge/PENDING-DISCUSSION-<>.svg)
 
@@ -110,6 +132,8 @@ How the whole notice thing will be implemented??
 
 Nokshes will help to recruit on any operation...such as photographer..graphic designer...dev..
 (How do you certify someone as photographer, graphic designer or dev)
+     ![ForTheBadge 20-30](http://ForTheBadge.com/images/badges/explainnation-akshar.svg)](http://ForTheBadge.com)
+      we can do that by sending a text to everyone "hiring devs, reply for more info" and such. But this kind of request arent made that often, so its not mendatory.
 
 ![Generic badge](https://img.shields.io/badge/PENDING-DISCUSSION-<>.svg)
 
@@ -120,3 +144,5 @@ Nokshes ***may*** give anonymous text sevice as user to admin..but wont be anon 
 Nokshes will keep scret of any vulgar behaviour from users
 (What is Vulgar Behaviour??)
 (What do we hide??)
+     ![ForTheBadge 20-30](http://ForTheBadge.com/images/badges/explainnation-akshar.svg)](http://ForTheBadge.com)
+     this is maybe stupid, but if any user send inappropriate texts, we will not reveal...or keep privacy. such as if i want sex from nokshes, nokshes will either ignore or reply with a joke... but we wont tell it anyone.. and even if anyone wants to know....even from higher higher authority. It's more like ethics of Nokshes 
