@@ -50,6 +50,8 @@ Class Representatives are Basic Admins
 > - [ ] Update Routines
 > - [ ] Raise a Medical Emergency Alert
 > - [ ] Call for donation or help
+> - [ ] Can create a push requests for new resource collection
+> - [ ] Transfer admin role to a different user
 
 ### Principles:
 * There will be exactly two admins for each class
@@ -64,3 +66,13 @@ Class Representatives are Basic Admins
 * Admins can contact other admins directly without approval
 * Any other types of connection requires on approval of both ends
 * Teachers are exception to the location policy, any user can get any teacher's probable location
+
+## Role 5: IUT Public Resource Manager
+All kinds of public resources with subject and content details will be available.
+So that users can find these resources with ease
+All resource collection must be carefully judged and classifed before adding it to the repository
+Types of Resources that will be available:
+> - [ ] Pevious year Questions
+> - [ ] Google Drive Links
+
+> List other types of resources here.
