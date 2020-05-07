@@ -27,9 +27,8 @@ Azure Services will cost us fucking high on **every single read write operations
 
 ### Google Cloud Platform
 > Google Virtual Machine - Compute Engine
->>![Google VM Pricing](https://drive.google.com/file/d/1t9BIZdbCs1wZavfLuiBPLF17eqOvUSlA/view?usp=sharing)
+>>![Google VM Pricing](https://drive.google.com/uc?export=view&id=1t9BIZdbCs1wZavfLuiBPLF17eqOvUSlA
 (N.B: Open image in a new tab)
-
 > Google App Engine + Cloud SQL + Cloud Storage
 > Although I have not calculated the cost, but I am sure that, we can get everything in $60 - $90 / month
 
@@ -60,16 +59,3 @@ The REST API will be written in **Node.js + Express.js web framework**
 We will write a basic library of most commonly used facebook Graph API GET and POST request so that it makes our life more easy on managing the main API.
 
 ***Focus on the MAIN REST API and Graph API Interface and less on SQL and Cloud Storage because Database and Storage hosting options maybe will be changed in the future***
-
-```mermaid
-graph LR
-A[DialogFlow]
-B[APP Service -> REST API]
-C[SQL Server]
-D[Cloud Storage]
-E[Other Services]
-A --> B
-E --> B
-B --> C
-B --> D
-```
