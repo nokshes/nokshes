@@ -1,0 +1,24 @@
+{
+  "name": "jnokshes",
+  "version": "0.0.0",
+  "description": "NodeJS Server to Nokshes WebApp",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"dev": "npx nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nokshes/nokshes.git"
+  },
+  "author": "Noman5237",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nokshes/nokshes/issues"
+  },
+  "homepage": "https://github.com/nokshes/nokshes#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.3"
+  }
+}
