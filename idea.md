@@ -2,26 +2,32 @@
 # raw ideas:
 ## target
 ![Generic badge](https://img.shields.io/badge/PENDING-DISCUSSION-<YELLOW>.svg)
+
 help cr to reach all of his classmates at 99% affinity. Anywhere,=..messenger,twitter or any other any platform.
 
 ![Generic badge](https://img.shields.io/badge/PENDING-CLARIFICATION-ORANGE.svg)
+
 make it more productive and not rely on checking importang stuff manully and make sure things dont get lost like it does in other group chat or group. (List important stuffs other than notices)
 
 ![Generic badge](https://img.shields.io/badge/PENDING-CLARIFICATION-ORANGE.svg)
+
 instant reply.. So user wont be in dispair and cant blame CR.
 (What is instant reply?)
 
 ![Generic badge](https://img.shields.io/badge/FUTURE-PLAN-BLUE.svg)
+
 * we can also make an android app on demand
 * Nokshes will have a messenger game ***later***
 
 ## admin system
 ![Generic badge](https://img.shields.io/badge/PENDING-DISCUSSION-<YELLOW>.svg)
+
 * each class and each admin will have code for security reason,*optional.
 ***but it will be hard for the admin to handle many request. Have to come out some remedy*** 
 > subscription code
 
 ![Generic badge](https://img.shields.io/badge/PENDING-CLARIFICATION-ORANGE.svg)
+
 admin will be able to set importance rating
 (What is importance rating? Needs context too.)
 
@@ -70,12 +76,15 @@ bot will make sure to make subscriber watch any important notice. Else it will k
 (How do you describe major events)
 
 ![Generic badge](https://img.shields.io/badge/PENDING-IMPLEMENTATION-RED.svg)
-Nokshes will be a repository for essential files. Such as topshhet for assignment,logo,routines,assignment sheet ?
-Nokshes will have questions of previous exams . We can upload the the questions after every exam and upload pictures from the library
 
-Nokshes will also provide the copies of emails send by the register office, department, ict center etc.
+* Nokshes will be a repository for essential files. Such as topshhet for assignment,logo,routines,assignment sheet ?
+* Nokshes will have questions of previous exams . We can upload the the questions after every exam and upload pictures from the library
+
+![Generic badge](https://img.shields.io/badge/PENDING-CLARIFICATION-ORANGE.svg)
 
 We should catagorize requests like help, book etc**
+(List some more request)
+(How would these requests work out??)
 
 ![Generic badge](https://img.shields.io/badge/PENDING-IMPLEMENTATION-RED.svg)
 
@@ -96,6 +105,7 @@ Categorize different types of notices
 
 ![Generic badge](https://img.shields.io/badge/PENDING-DISCUSSION-<YELLOW>.svg)
 
+Nokshes will also provide the copies of emails send by the register office, department, ict center etc.
 How the whole notice thing will be implemented??
 
 ![Generic badge](https://img.shields.io/badge/PENDING-CLARIFICATION-ORANGE.svg)
