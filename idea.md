@@ -177,6 +177,7 @@ Nokshes will keep scret of any vulgar behaviour from users
 (What is Vulgar Behaviour??)
 
 (What do we hide??)
+
 ![Generic badge](https://img.shields.io/badge/akshar-contrib-informational)
 
 this is maybe stupid, but if any user send inappropriate texts, we will not reveal...or keep privacy. such as if i want sex from nokshes, nokshes will either ignore or reply with a joke... but we wont tell it anyone.. and even if anyone wants to know....even from higher higher authority. It's more like ethics of Nokshes 
