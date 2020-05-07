@@ -91,13 +91,6 @@ We should catagorize requests like help, book etc**
 (List some more request)
 (How would these requests work out??)
 
-![Generic badge](https://img.shields.io/badge/PENDING-IMPLEMENTATION-RED.svg)
-
-(Add this chunk into IUT Info Section)
-***Club Information**
-> * Nokshes will also hold all the in formations about all the clubs
-> * It can provide links for all the pages of the clubs
-
 ![Generic badge](https://img.shields.io/badge/PENDING-CONTRIBUTION-MAGENTA.svg)
 
 ***Reminder***
