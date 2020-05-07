@@ -1,61 +1,114 @@
-***read it in raw mode or edit***
-
 
 # raw ideas:
 ## target
-> * help cr to reach all of his classmates at 99% affinity. Anywhere,=..messenger,twitter or any other any platform.
-> * make it more productive and not rely on checking importang stuff manully and make sure things dont get lost like it does in other group chat or group.
-> * instant reply.. So user wont be in dispair and cant blame CR.
-***help newbies to learn about IUT by updating a database about common questions asked by BOROVAIs***
-***a guide to freshers***
-***we can also make an android app on demand***
+![Generic badge](https://img.shields.io/badge/PENDING-DISCUSSION-<YELLOW>.svg)
+help cr to reach all of his classmates at 99% affinity. Anywhere,=..messenger,twitter or any other any platform.
+
+![Generic badge](https://img.shields.io/badge/PENDING-CLARIFICATION-ORANGE.svg)
+make it more productive and not rely on checking importang stuff manully and make sure things dont get lost like it does in other group chat or group. (List important stuffs other than notices)
+
+![Generic badge](https://img.shields.io/badge/PENDING-CLARIFICATION-ORANGE.svg)
+instant reply.. So user wont be in dispair and cant blame CR.
+(What is instant reply?)
+
+![Generic badge](https://img.shields.io/badge/FUTURE-PLAN-BLUE.svg)
+* we can also make an android app on demand
+* Nokshes will have a messenger game ***later***
+
 ## admin system
-> * CR will be the admin of the service.
-> * bot will abide by the admin via text.
-> * users will able to subscribe if admin approves.
-> * there will be multiple admin (atleast two) for each class.
-> * each class and each admin will have code for security reason,*optional.
-> * when any subscription request are made, admin will recieve the id, name and the fb id..admin have to varify it himself.
-> * we should also get the information abopt whom admin is i mean cr is giving permission 
-***but it will be hard for the admin to handle many request. Have to come out some remedy***
->> subscription code 
-> * admin will be able to set importance rating
+![Generic badge](https://img.shields.io/badge/PENDING-DISCUSSION-<YELLOW>.svg)
+* each class and each admin will have code for security reason,*optional.
+***but it will be hard for the admin to handle many request. Have to come out some remedy*** 
+> subscription code
+
+![Generic badge](https://img.shields.io/badge/PENDING-CLARIFICATION-ORANGE.svg)
+admin will be able to set importance rating
+(What is importance rating? Needs context too.)
+
 ## bot capabilities:*
-> * bot will be able to separate group a and b. not mendatory though
-> * bot will be able to forward attatchment from admin.
-> * bot will relay request to admin and devs if uncapable.
-> * bot will serve the subscriber.
-> * bot can handle humanly service request Exampl: sign me up. I m from SWE 19 batch, IUT, My id 19XXXXXXX.
-> * bot can pull any previous notices.
-> * a routine will be saved, and bot will be able to answer any query about routine..including time, where,which room, which teacher.
-> * bot will remind subscriber...of any extra class, or any assignment submission deadline.
-> * bot will adapt to new questions.
-> * bot will make sure to make subscriber watch any important notice. Else it will keep re-sending text or attatchment.
+
+![Generic badge](https://img.shields.io/badge/PENDING-IMPLEMENTATION-RED.svg)
+
+bot will be able to separate group a and b.
+
+![Generic badge](https://img.shields.io/badge/PENDING-CLARIFICATION-ORANGE.svg)
+
+bot will be able to forward attatchment from admin.
+
+![Generic badge](https://img.shields.io/badge/PENDING-DISCUSSION-<YELLOW>.svg)
+
+bot will relay request to admin and devs if uncapable.
+
+![Generic badge](https://img.shields.io/badge/PENDING-SPECIFICATION-RED.svg)
+
+bot can pull any previous notices.
+Nokshes will keep track of notices
+(How much older notices will we preserve)
+
+![Generic badge](https://img.shields.io/badge/PENDING-IMPLEMENTATION-RED.svg)
+
+* a routine will be saved, and bot will be able to answer any query about routine..including time, where,which room, which teacher.
+* bot will remind subscriber...of any extra class, or any assignment submission deadline.
+
+![Generic badge](https://img.shields.io/badge/PENDING-CLARIFICATION-ORANGE.svg)
+![Generic badge](https://img.shields.io/badge/PENDING-DISCUSSION-<YELLOW>.svg)
+
+bot will adapt to new questions.
+(Clearify what is new question and how it will be able to answer things like that?)
+
+![Generic badge](https://img.shields.io/badge/PENDING-DISCUSSION-<YELLOW>.svg)
+
+bot will make sure to make subscriber watch any important notice. Else it will keep re-sending text or attatchment.
+(Conflicts with Notification Policy)
+
 ## services
-> * Nokshes will send text or attatchments to all subscriber under the admin
-> * Nokshes will keep track of notices and show it to user on demand instantly
-> * Nokshes will notify about any major events
-> * Nokshes will be a repository for essential files. Such as topshhet for assignment,logo,routines,assignment sheet ?
-> * Nokshes will also help with bus service, which bus to take from it to the other place? iutchatbot can do that, we can relay info from there i suupose.. or dhaka wheels?
-> * Nokshes will help user to find where to photocopy, where to print, where to eat, namaz time ( namaz koytay? )
-> * Nokshes will hold information about teachers and provost
-> * Nokshes will also provide the copies of emails send by the register office, department, ict center etc.
-> * Nokshes will have questions of previous exams . We can upload the the questions after every exam and upload pictures from the library
-> * Nokshes can also serve as messaging api . Suppose If a user of cse department needs ab+ve blood he/she can submit the request to the admin then admin will review the request the if it is valid he or she can forward this message to all the subscribers.
-***A subscriber also can turn of this kind of mesasage . We should catagorize requests like help, book etc**
+
+![Generic badge](https://img.shields.io/badge/PENDING-CLARIFICATION-ORANGE.svg)
+
+* Nokshes will send text or attatchments to all subscriber under the admin
+* Nokshes will notify about any major events
+(How do you describe major events)
+
+![Generic badge](https://img.shields.io/badge/PENDING-IMPLEMENTATION-RED.svg)
+Nokshes will be a repository for essential files. Such as topshhet for assignment,logo,routines,assignment sheet ?
+Nokshes will have questions of previous exams . We can upload the the questions after every exam and upload pictures from the library
+
+Nokshes will also provide the copies of emails send by the register office, department, ict center etc.
+
+We should catagorize requests like help, book etc**
+
+![Generic badge](https://img.shields.io/badge/PENDING-IMPLEMENTATION-RED.svg)
+
+(Add this chunk into IUT Info Section)
 ***Club Information**
 > * Nokshes will also hold all the in formations about all the clubs
 > * It can provide links for all the pages of the clubs
-***Pages**
-> * Nokshes will also have a list of all public pages of IUT
-> * And provide short information about all these pages 
-***Reminder**
-> * Nokshes will be able to send reminders about any event , exam if a subscriber wants to receive
-***Noksesh will help to find your rollmate***
-> * Nokshes will help you find fb_ID based on iut id if.
-> * Nokshes will help to recruit on any operation...such as photographer..graphic designer...dev..
-> * Nokshes ***may*** give anonymous text sevice as user to admin..but wont be anon to devs
-> * Nokshes will tell you the menu in CDS and price. Ex: cds singara 5tk
-> * Nokshes will have a messenger game ***later***
-> * Nokshes will keep scret of any vulgar behaviur from users
-> * .........
+
+![Generic badge](https://img.shields.io/badge/PENDING-CONTRIBUTION-MAGENTA.svg)
+
+***Reminder***
+(List all the categories of notices that should have the ability to be reminded)
+(How often will things be reminded?)
+
+![Generic badge](https://img.shields.io/badge/PENDING-CONTRIBUTION-MAGENTA.svg)
+
+Categorize different types of notices
+
+![Generic badge](https://img.shields.io/badge/PENDING-DISCUSSION-<YELLOW>.svg)
+
+How the whole notice thing will be implemented??
+
+![Generic badge](https://img.shields.io/badge/PENDING-CLARIFICATION-ORANGE.svg)
+
+Nokshes will help to recruit on any operation...such as photographer..graphic designer...dev..
+(How do you certify someone as photographer, graphic designer or dev)
+
+![Generic badge](https://img.shields.io/badge/PENDING-DISCUSSION-<YELLOW>.svg)
+
+Nokshes ***may*** give anonymous text sevice as user to admin..but wont be anon to devs
+
+![Generic badge](https://img.shields.io/badge/PENDING-CLARIFICATION-ORANGE.svg)
+
+Nokshes will keep scret of any vulgar behaviour from users
+(What is Vulgar Behaviour??)
+(What do we hide??)
