@@ -15,7 +15,7 @@ help cr to reach all of his classmates at 99% affinity. Anywhere,=..messenger,tw
 make it more productive and not rely on checking importang stuff manully and make sure things dont get lost like it does in other group chat or group. (List important stuffs other than notices)
 
 
-[![ForTheBadge 20-30](http://ForTheBadge.com/images/badges/clarific-akshar.svg)](http://ForTheBadge.com)
+![Generic badge](https://img.shields.io/badge/akshar-contrib-informational)
       
       
       >information about teachers and provost
@@ -31,9 +31,7 @@ make it more productive and not rely on checking importang stuff manully and mak
 instant reply.. So user wont be in dispair and cant blame CR.
 (What is instant reply?)
 
-
-    [![ForTheBadge 20-30](http://ForTheBadge.com/images/badges/clari-akshar.svg)](http://ForTheBadge.com)
-
+![Generic badge](https://img.shields.io/badge/akshar-contrib-informational)
 
 instant replies is, bot will reply user immediately...which cr cant handle,,thats why its nokshes is necessery
 
@@ -55,7 +53,7 @@ admin will be able to set importance rating
 (What is importance rating? Needs context too.)
 
 
-[![ForTheBadge 20-30](http://ForTheBadge.com/images/badges/clarifc-akshar.svg)](http://ForTheBadge.com)
+![Generic badge](https://img.shields.io/badge/akshar-contrib-informational)
 
 admin will can tell which notice is more important by rating it, its not really necessery to be honest
 
@@ -69,7 +67,7 @@ bot will be able to separate group a and b.
 
 bot will be able to forward attatchment from admin.
 
-[![ForTheBadge 20-30](http://ForTheBadge.com/images/badges/clarification-akshar.svg)](http://ForTheBadge.com)
+![Generic badge](https://img.shields.io/badge/akshar-contrib-informational)
 
 attatchments...such as picture link, video, sticker or such.
 
@@ -85,7 +83,7 @@ Nokshes will keep track of notices
 
 (How much older notices will we preserve)
 
-[![ForTheBadge 20-30](http://ForTheBadge.com/images/badges/contrib-akshar.svg)](http://ForTheBadge.com)
+![Generic badge](https://img.shields.io/badge/akshar-contrib-informational)
 
 one or two weeks tops, but we can deliver any universal notices(explained in catagory of notifications) via iut website
 
@@ -100,7 +98,7 @@ one or two weeks tops, but we can deliver any universal notices(explained in cat
 bot will adapt to new questions.
 (Clearify what is new question and how it will be able to answer things like that?)
 
-[![ForTheBadge 20-30](http://ForTheBadge.com/images/badges/clarific-akshar.svg)](http://ForTheBadge.com)
+![Generic badge](https://img.shields.io/badge/akshar-contrib-informational)
 
 any kind of question... that bot couldn't understand or cant answer, devs should update the the intention library immediately. if a bot cant answer, the question should be forwarded to dev and then dev will take action to update it.
     question such as, Who created you, how are you , what do you eat, it will be as humanly as possible.
@@ -118,7 +116,7 @@ bot will make sure to make subscriber watch any important notice. Else it will k
 * Nokshes will notify about any major events
 (How do you describe major events)
 
-[![ForTheBadge 20-30](http://ForTheBadge.com/images/badges/clarification-akshar.svg)](http://ForTheBadge.com)
+![Generic badge](https://img.shields.io/badge/akshar-contrib-informational)
 
 notifications from admin will best only to the subscribers who subscribed under that certain admin,,,since ther can be several admins
     major events such concerts, sports day, holiday, club day 
@@ -143,7 +141,7 @@ We should catagorize requests like help, book etc**
 ![Generic badge](https://img.shields.io/badge/PENDING-CONTRIBUTION-MAGENTA.svg)
 
 
-[![ForTheBadge 20-30](http://ForTheBadge.com/images/badges/contrib-akshar.svg)](http://ForTheBadge.com)
+![Generic badge](https://img.shields.io/badge/akshar-contrib-informational)
 
 1. Local notification: these notifications will be from cr and they are about his class only.
 
@@ -164,7 +162,7 @@ How the whole notice thing will be implemented??
 Nokshes will help to recruit on any operation...such as photographer..graphic designer...dev..
 (How do you certify someone as photographer, graphic designer or dev)
 
-[![ForTheBadge 20-30](http://ForTheBadge.com/images/badges/explainnation-akshar.svg)](http://ForTheBadge.com)
+![Generic badge](https://img.shields.io/badge/akshar-contrib-informational)
 
 we can do that by sending a text to everyone "hiring devs, reply for more info" and such. But this kind of request arent made that often, so its not mendatory.
 
@@ -179,7 +177,6 @@ Nokshes will keep scret of any vulgar behaviour from users
 (What is Vulgar Behaviour??)
 
 (What do we hide??)
-
-[![ForTheBadge 20-30](http://ForTheBadge.com/images/badges/explainnation-akshar.svg)](http://ForTheBadge.com)
+![Generic badge](https://img.shields.io/badge/akshar-contrib-informational)
 
 this is maybe stupid, but if any user send inappropriate texts, we will not reveal...or keep privacy. such as if i want sex from nokshes, nokshes will either ignore or reply with a joke... but we wont tell it anyone.. and even if anyone wants to know....even from higher higher authority. It's more like ethics of Nokshes 
