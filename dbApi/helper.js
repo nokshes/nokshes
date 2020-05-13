@@ -6,26 +6,48 @@ const Admin = sequelize.models.Admin;
 /**
  * Gets University ID from Facebook Id from the database
  */
-export const getUnIdFromPsId: async (_psId) {
+
+const getUserByUnId = async (_unId) => {
 	return await User.findOne({
-		attributes: ["unId"],
+		where: {
+			unId: _unId,
+		}
+	});
+};
+
+const getUserByPsId = async (_psId) => {
+	return await User.findOne({
 		where: {
 			psId: _psId
 		}
 	});
 };
 
-export const getClassAdmins: async (_unId) => {
+const getUnIdFromPsId = async (_psId) => {
+	return (await getUserByPsId(_psId)).unId;
+};
+
+const getClassAdmins = async (_unId) => {
 	return await Admin.findAll({
 		where: {
-			unId: {
-				[Op.like]: `${_unId.substring(0, 8)}%`
-			}
+			[Op.and]: [
+				{
+					unId: {
+						[Op.like]: `${_unId.substring(0, 8)}%`
+					}
+				},
+				{
+					regStatus: {
+						[Op.eq] : 1
+					}
+				}
+			]
 		}
 	});
 };
 
-export const getSeniorAdmins: async (_unId) => {
+// TODO (May 12, 2020): Update the get senior Admins Id 
+const getSeniorAdmins = async (_unId) => {
 	return await Admin.findAll({
 		where: {
 			unId: {
@@ -35,19 +57,5 @@ export const getSeniorAdmins: async (_unId) => {
 	});
 }
 
-export const getUserByUnId: async (_unId) => {
-	return await User.findOne({
-		where: {
-			unId: _unId,
-		}
-	});
-};
-
-export const getUserByPsId: async (_psId) {
-	return await User.findOne({
-		where: {
-			psId: _psId
-		}
-	});
-};
+module.exports = {getUserByUnId, getUserByPsId, getUnIdFromPsId, getClassAdmins, getSeniorAdmins};
 

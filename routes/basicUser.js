@@ -8,7 +8,7 @@ const express = require("express");
 const router = express.Router();
 
 // Utility API
-const {dialogflowReqParser} = require("../util/dialowflowReqParser.js");
+const {dialogflowReqParser} = require("../util/dialogflowReqParser.js");
 const {sessionHandler} = require("../util/session.js");
 const {registerReqJSON, setResMessage} = require("../util/dialogflowResHelper.js");
 
@@ -18,7 +18,7 @@ const {register} = require("./basicUser/register.js");
 router.use(express.json());
 router.use(dialogflowReqParser);
 router.use(sessionHandler);
-router.user(registerReqJSON);
+router.use(registerReqJSON);
 router.get("/", async (req, res) => {
 	let message;
 	switch(req.body.intentName) {

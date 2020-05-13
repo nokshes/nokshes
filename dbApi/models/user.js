@@ -11,21 +11,21 @@ class User extends Model {
 User.init({
   // Model attributes are defined here
 	fbId: {
-		type: DataTypes.STRING(64),
+		type: DataTypes.STRING(64)
 	},
 	psId: {
 		type: DataTypes.STRING(64),
-		allowNull: false,
+		allowNull: false
 	},
 	unId: {
 		type: DataTypes.STRING(16),
-		allowNull: false
 		defaultValue: "000000000",
-		primaryKey: true,
+		allowNull: false,
+		primaryKey: true
 	},
   firstName: {
     type: DataTypes.STRING(32),
-    allowNull: false,
+    allowNull: false
   },
   lastName: {
     type: DataTypes.STRING(32),
@@ -33,24 +33,27 @@ User.init({
   },
 	gender: {
 		type: DataTypes.STRING(16),
-    allowNull: false,
-	}
-	regStatu: {
-		type: DataType.INTEGER(2);
-		defaultValue: 0,
+    allowNull: false
+	},
+	regStatus: {
+		type: DataTypes.INTEGER,
+		allowNull: false,
+		defaultValue: 0
 	},
 	isAdmin: {
-		type: DataType.BOOLEAN,
-		defaultValue: false,
+		type: DataTypes.BOOLEAN,
+		defaultValue: false
 	}
 }, {
   // Other model options go here
-  sequelize, // We need to pass the connection instance
-  modelName: 'User' // We need to choose the model name
+	sequelize, // We need to pass the connection instance
+  modelName: "User" // We need to choose the model name
 });
 
 
 // Syncing with the database with current User model
-export const loadUser: async () => {
-  await User.sync({alter: true});
+const loadUser = async () => {
+  await User.sync({force: true});
 };
+
+module.exports = {loadUser};

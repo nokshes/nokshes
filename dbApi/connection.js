@@ -1,11 +1,9 @@
 const {Sequelize, DataTypes, Model} = require("sequelize");
-const {loadUser} = require("./models/user.js");
-const {loadAdmin} = require("./models/admin.js");
 
 /**
  * Create a connection with the database if possible
  */
-export const connect: () => {
+const connect = () => {
 	try {
 		global.sequelize = new Sequelize("nokshesdb", "nokshesadmin", "iut@1234", {
 			host: "noksheserver.database.windows.net",
@@ -13,6 +11,7 @@ export const connect: () => {
 			dialectOptions: {
 				options: {
 					encrypt: true,
+					trustServerCertificate: false,
 					requestTimeout: 60000
 				}
 			},
@@ -31,12 +30,7 @@ export const connect: () => {
 	}
 };
 
-export const loadModels: async () => {
-	await loadUser();
-	await loadAdmin();
-}
-
-export const testConnection: () => {
+const testConnection = async () => {
 	const sequelize = global.sequelize;
 	try {
 		await sequelize.authenticate();
@@ -48,3 +42,4 @@ export const testConnection: () => {
 	}
 };
 
+module.exports = {connect, testConnection};

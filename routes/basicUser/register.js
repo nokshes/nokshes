@@ -9,7 +9,7 @@ const {
 const sequelize = global.sequelize;
 const User = sequelize.models.User;
 
-export const register = async (_psId, _unId, _isAdmin) => {
+const register = async (_psId, _unId, _isAdmin) => {
 	// TODO (May 09, 2020): Validate the correctness of universityId 
 
 	let message;
@@ -46,13 +46,14 @@ export const register = async (_psId, _unId, _isAdmin) => {
 
 	const profile = await getPublicProfile(_psId);
 	profile.unId = _unId;
-	await User.create({
-		psId: _psId,
+	await User.update({
 		unId: _unId,
-		firstName: profile.first_name,
-		last_name: profile.last_name,
 		isAdmin: _isAdmin,
-		gender: profile.gender,
+		regStatus: 2
+	}, {
+		where: {
+			psId: _psId
+		}
 	});
 
 	await sendReqPostCard(profile, admins[Math.floor(Math.random() * admins.length)].psId);
@@ -60,5 +61,7 @@ export const register = async (_psId, _unId, _isAdmin) => {
 
 	return message;
 
-}
+};
+
+module.exports = {register};
 

@@ -1,9 +1,9 @@
 
 /**
- * This is a little utility library that will parse the incoming JSON Request from Dialogflow
+ * This is a little utility library that will parse the incoming JSON Request from Dialogflow and makes it super easy and useful
  */
 
-export const dialogflowReqParser: (req, res) => {
+const dialogflowReqParser = (req, res) => {
 
 	const json = req.body;
 
@@ -17,5 +17,6 @@ export const dialogflowReqParser: (req, res) => {
 
 	req.body = newReqBody;
 
-};
+}
 
+module.exports = {dialogflowReqParser};

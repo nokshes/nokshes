@@ -4,7 +4,7 @@ const config = require("./config.js");
 
 const graphUrl = "https://graph.facebook.com/v7.0";
 
-export const getNode: async (nodeId, edge, fields, accessToken) => {
+const getNode = async (nodeId, edge, fields, accessToken) => {
 	const reqUrl = graphUrl + "/" + nodeId + "/" + edge + "?fields=" + fields.join(",") + "&access_token=" + accessToken;
 	console.log(reqUrl);
 	try {
@@ -14,7 +14,8 @@ export const getNode: async (nodeId, edge, fields, accessToken) => {
 	}
 };
 
-export const getPublicProfile: async (_psId) => {
+const getPublicProfile = async (_psId) => {
 	return (await getNode(_psId, "", ["first_name", "last_name", "profile_pic", "gender"], config.pageAccessToken)).data;
 };
 
+module.exports = {getNode, getPublicProfile};

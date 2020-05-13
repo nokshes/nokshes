@@ -3,8 +3,8 @@
  * This module will handle session parameter settings.
  */
 
-const {getUnIdFromPsId} = require("dbApi/helper.js");
-const {getPublicProfile} = require("graphApi/get.js")
+const {getUnIdFromPsId} = require("../dbApi/helper.js");
+const {getPublicProfile} = require("../graphApi/get.js")
 
 const sequelize = global.sequelize;
 const User = sequelize.models.User;
@@ -12,7 +12,7 @@ const User = sequelize.models.User;
 /**
  * Setting unId as session entity if it does not exist
  */
-export const sessionHandler = async (req, res) => {
+const sessionHandler = async (req, res) => {
 	let _unid;
 
 	_unid = global.sessions[req.body.sessionId];
@@ -35,6 +35,7 @@ export const sessionHandler = async (req, res) => {
 			unId: _unId,
 			firstName: profile.first_name,
 			last_name: profile.last_name,
+			gender: profile.gender,
 		});
 		_unId = "000000000";
 	}
@@ -46,7 +47,7 @@ export const sessionHandler = async (req, res) => {
 
 };
 
-export const autoSessionIdsCleaner = () => {
+const autoSessionIdsCleaner = () => {
 	console.log("Cleaning Up Expired Sessions");
 	let activeSessionIds = {};
 	const now = Date.now();
@@ -58,3 +59,4 @@ export const autoSessionIdsCleaner = () => {
 	global.sessions = activeSessionIds;
 };
 
+module.exports = {sessionHandler, autoSessionIdsCleaner};

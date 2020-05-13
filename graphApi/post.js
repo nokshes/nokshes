@@ -5,7 +5,7 @@ const config = require("./config.js");
 
 const graphUrl = "https://graph.facebook.com/v7.0";
 
-export const sendReqPostCard: async (profile, _adminPsId) => {
+const sendReqPostCard = async (profile, _adminPsId) => {
 	const postCard = {
 		recipient: {
 			id: _adminPsId
@@ -52,5 +52,6 @@ export const sendReqPostCard: async (profile, _adminPsId) => {
 		console.log("Couldn't send message.", err);
 	}
 
-
 };
+
+module.exports = {sendReqPostCard};

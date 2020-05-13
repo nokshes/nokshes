@@ -9,12 +9,12 @@ Admin.init({
   // Model attributes are defined here
 	unId: {
 		type: DataTypes.STRING(16),
-		allowNull: false
-		primaryKey: true,
+		allowNull: false,
+		primaryKey: true
 	},
 	adminType: {
 		type: DataTypes.INTEGER(2),
-		defualtValue: 1,
+		defualtValue: 1
 	}
 }, {
   // Other model options go here
@@ -22,6 +22,8 @@ Admin.init({
   modelName: 'Admin' // We need to choose the model name
 });
 
-export const loadAdmin: async () => {
-	await Admin.sync({alter: true})
+const loadAdmin = async () => {
+	await Admin.sync({force: true})
 };
+
+module.exports = {loadAdmin};
