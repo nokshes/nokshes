@@ -3,7 +3,7 @@
  * This is a little utility library that will parse the incoming JSON Request from Dialogflow and makes it super easy and useful
  */
 
-const dialogflowReqParser = (req, res) => {
+const dialogflowReqParser = (req, res, next) => {
 
 	const json = req.body;
 
@@ -16,6 +16,7 @@ const dialogflowReqParser = (req, res) => {
 	};
 
 	req.body = newReqBody;
+	next();
 
 }
 

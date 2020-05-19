@@ -2,6 +2,7 @@
 const sequelize = global.sequelize;
 const User = sequelize.models.User;
 const Admin = sequelize.models.Admin;
+const {Op} = require("sequelize");
 
 /**
  * Gets University ID from Facebook Id from the database
@@ -24,7 +25,11 @@ const getUserByPsId = async (_psId) => {
 };
 
 const getUnIdFromPsId = async (_psId) => {
-	return (await getUserByPsId(_psId)).unId;
+	const user = await getUserByPsId(_psId);
+	if (user) {
+		return user.unId;
+	}
+	return user;
 };
 
 const getClassAdmins = async (_unId) => {

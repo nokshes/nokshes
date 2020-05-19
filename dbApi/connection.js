@@ -5,13 +5,13 @@ const {Sequelize, DataTypes, Model} = require("sequelize");
  */
 const connect = () => {
 	try {
-		global.sequelize = new Sequelize("nokshesdb", "nokshesadmin", "iut@1234", {
-			host: "noksheserver.database.windows.net",
+		global.sequelize = new Sequelize("nokshesdb", "SA", "Noman7692", {
+			host: "localhost",
 			dialect: "mssql",
 			dialectOptions: {
 				options: {
 					encrypt: true,
-					trustServerCertificate: false,
+					trustServerCertificate: true,
 					requestTimeout: 60000
 				}
 			},

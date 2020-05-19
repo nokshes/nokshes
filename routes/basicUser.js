@@ -16,20 +16,21 @@ const {registerReqJSON, setResMessage} = require("../util/dialogflowResHelper.js
 const {register} = require("./basicUser/register.js");
 
 router.use(express.json());
+router.use(registerReqJSON);
 router.use(dialogflowReqParser);
 router.use(sessionHandler);
-router.use(registerReqJSON);
-router.get("/", async (req, res) => {
+router.post("/", async (req, res) => {
 	let message;
 	switch(req.body.intentName) {
 		case "Register":
 		{
-			message = await register(req.body.fbId, req.body.unId, req.body.params.isAdmin == "true");
+			message = await register(req.body.psId, req.body.params.unId, req.body.params.isAdmin == "true");
 		} break;
 	};
 
 	// send the message in response json
-	setResMessage(message);
+	setResMessage(res, message);
+	res.json(res.body);
 
 });
 

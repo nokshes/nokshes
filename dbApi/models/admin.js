@@ -1,9 +1,12 @@
 
 const {Sequelize, DataTypes, Model} = require('sequelize');
 const sequelize = global.sequelize;
-const User = sequelize.models.User;
 
-class Admin extends User {};
+class Admin extends Model {
+	getFullName() {
+		return [this.firstName, this.lastName].join(" ");
+	}
+};
 
 Admin.init({
   // Model attributes are defined here
@@ -23,7 +26,7 @@ Admin.init({
 });
 
 const loadAdmin = async () => {
-	await Admin.sync({force: true})
+	await Admin.sync({alter: true})
 };
 
 module.exports = {loadAdmin};

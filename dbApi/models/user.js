@@ -36,13 +36,10 @@ User.init({
     allowNull: false
 	},
 	regStatus: {
-		type: DataTypes.INTEGER,
-		allowNull: false,
-		defaultValue: 0
+		type: DataTypes.INTEGER
 	},
 	isAdmin: {
 		type: DataTypes.BOOLEAN,
-		defaultValue: false
 	}
 }, {
   // Other model options go here
@@ -53,7 +50,7 @@ User.init({
 
 // Syncing with the database with current User model
 const loadUser = async () => {
-  await User.sync({force: true});
+  await User.sync({alter: true});
 };
 
 module.exports = {loadUser};

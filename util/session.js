@@ -12,12 +12,13 @@ const User = sequelize.models.User;
 /**
  * Setting unId as session entity if it does not exist
  */
-const sessionHandler = async (req, res) => {
+const sessionHandler = async (req, res, next) => {
 	let _unid;
 
 	_unid = global.sessions[req.body.sessionId];
 	if (_unid !== undefined) {
-		return;
+		req.body.unId = _unId;
+		next();
 	} else {
 		console.log("Session Id not found!");
 	}
@@ -30,21 +31,23 @@ const sessionHandler = async (req, res) => {
 		// register him as guest user
 		// but first get his name from graph api
 		const profile = await getPublicProfile(_psId);
+		_unId = "000000000";
 		await User.create({
 			psId: _psId,
 			unId: _unId,
 			firstName: profile.first_name,
 			last_name: profile.last_name,
 			gender: profile.gender,
+			regStatus: 0,
+			isAdmin: false
 		});
-		_unId = "000000000";
 	}
 	
 	// Push the University ID into the request body
 	req.body.unId = _unId;
 	// Add the current session to the global session list with the unId mapped
-	globals.sessions[sessionId] = {unId: _unId, createdOn: req.body.timestamp};
-
+	global.sessions[req.body.sessionId] = {unId: _unId, createdOn: req.body.timestamp};
+	next();
 };
 
 const autoSessionIdsCleaner = () => {

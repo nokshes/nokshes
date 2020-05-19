@@ -1,9 +1,13 @@
 
-const registerReqJSON = (req, res) => {
-	res.body.fulfillmentText = JSON.stringify(req);
+const registerReqJSON = (req, res, next) => {
+  if (!res.body) {
+    res.body = {};
+  }
+  res.body.fulfillmentText = JSON.stringify(req.body);
+  next();
 };
 
-const setResMessage = (message) => {
+const setResMessage = (res, message) => {
 	res.body.fulfillmentMessages = [
 		{
       text: {
