@@ -36,7 +36,7 @@ const sessionHandler = async (req, res, next) => {
 			psId: _psId,
 			unId: _unId,
 			firstName: profile.first_name,
-			last_name: profile.last_name,
+			lastName: profile.last_name,
 			gender: profile.gender,
 			regStatus: 0,
 			isAdmin: false

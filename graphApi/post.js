@@ -45,9 +45,10 @@ const sendReqPostCard = async (profile, _adminPsId) => {
 	};
 
 	try {
-		const response = await axios.post(`${graphUrl}/${config.pageId}/messages?`, postCard);
+		const response = await axios.post(`${graphUrl}/${config.pageId}/messages?access_token=${config.pageAccessToken}`, postCard);
 		// TODO (May 11, 2020): Queue the message in receipient inbox if Error 10
 		// Error 10: This message is sent outside of allowed window.
+		console.log(response);
 	} catch (err) {
 		console.log("Couldn't send message.", err);
 	}

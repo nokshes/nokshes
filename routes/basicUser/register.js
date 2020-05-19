@@ -44,6 +44,7 @@ const register = async (_psId, _unId, _isAdmin) => {
 		message = "Your registration will be processed as an administrator.";
 	}
 
+	// TODO: remove the following line of code and use the 'user' variable fetched from the database
 	const profile = await getPublicProfile(_psId);
 	profile.unId = _unId;
 	await User.update({

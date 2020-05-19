@@ -9,48 +9,49 @@ class User extends Model {
 };
 
 User.init({
-  // Model attributes are defined here
+	// Model attributes are defined here
 	fbId: {
 		type: DataTypes.STRING(64)
 	},
 	psId: {
 		type: DataTypes.STRING(64),
-		allowNull: false
+		allowNull: false,
+		unique: true,
+		primaryKey: true
 	},
 	unId: {
 		type: DataTypes.STRING(16),
-		defaultValue: "000000000",
 		allowNull: false,
-		primaryKey: true
 	},
-  firstName: {
-    type: DataTypes.STRING(32),
-    allowNull: false
-  },
-  lastName: {
-    type: DataTypes.STRING(32),
-    // allowNull defaults to true
-  },
+	firstName: {
+		type: DataTypes.STRING(32),
+	},
+	lastName: {
+		type: DataTypes.STRING(32),
+		allowNull: false
+	},
 	gender: {
 		type: DataTypes.STRING(16),
-    allowNull: false
+		allowNull: false
 	},
 	regStatus: {
-		type: DataTypes.INTEGER
+		type: DataTypes.INTEGER,
+		allowNull: false
 	},
 	isAdmin: {
 		type: DataTypes.BOOLEAN,
+		allowNull: false
 	}
 }, {
-  // Other model options go here
+	// Other model options go here
 	sequelize, // We need to pass the connection instance
-  modelName: "User" // We need to choose the model name
+	modelName: "User" // We need to choose the model name
 });
 
 
 // Syncing with the database with current User model
 const loadUser = async () => {
-  await User.sync({alter: true});
+	await User.sync({ alter: true });
 };
 
-module.exports = {loadUser};
+module.exports = { loadUser };
