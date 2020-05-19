@@ -17,8 +17,8 @@ const {register} = require("./basicUser/register.js");
 
 router.use(express.json());
 router.use(registerReqJSON);
-router.use(dialogflowReqParser);
-router.use(sessionHandler);
+// router.use(dialogflowReqParser);
+// router.use(sessionHandler);
 router.post("/", async (req, res) => {
 	let message;
 	/*
