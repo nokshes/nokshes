@@ -12,7 +12,7 @@ const dialogflowReqParser = (req, res, next) => {
 		psId: json.originalDetectIntentRequest.payload.data.sender.id,
 		params: json.queryResult.parameters,
 		sessionId: json.session,
-		timeStamp: json.originalDetectIntentRequest.payload.data.message.timestamp,
+		timeStamp: json.originalDetectIntentRequest.payload.data.timestamp,
 	};
 
 	req.body = newReqBody;

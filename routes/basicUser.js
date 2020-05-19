@@ -17,20 +17,20 @@ const {register} = require("./basicUser/register.js");
 
 router.use(express.json());
 router.use(registerReqJSON);
-// router.use(dialogflowReqParser);
-// router.use(sessionHandler);
+router.use(dialogflowReqParser);
+router.use(sessionHandler);
 router.post("/", async (req, res) => {
 	let message;
-	/*
+	
 	switch(req.body.intentName) {
 		case "Register":
 		{
 			message = await register(req.body.psId, req.body.params.unId, req.body.params.isAdmin == "true");
 		} break;
 	};
-	*/
+	
 	// send the message in response json
-	setResMessage(res, res.body.fulfillmentText);
+	setResMessage(res, message);
 	res.json(res.body);
 
 });
