@@ -4,6 +4,7 @@ const registerReqJSON = (req, res, next) => {
     res.body = {};
   }
   res.body.fulfillmentText = JSON.stringify(req.body);
+  console.log(res.body.fulfillmentText);
   next();
 };
 
