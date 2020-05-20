@@ -17,10 +17,10 @@ const register = async (_psId, _unId, _isAdmin) => {
   let message;
   try {
     const user = await getUserByPsId(_psId);
-    if (user.registeredUser == 1) {
+    if (user.regStatus == "1") {
       message = "You're already registered.";
       return message;
-    } else if (user.regStatus == 2) {
+    } else if (user.regStatus == "2") {
       message = "Your previous registration application is already PENDING.";
       return message;
     }
