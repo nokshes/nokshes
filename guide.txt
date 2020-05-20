@@ -1,0 +1,18 @@
+0. Install NodeJS and related Dependencies
+https://nodejs.org/en/
+1. Install MSSQL Server
+2. Learn Express
+https://expressjs.com/
+3. Learn Sequelize, SQL
+https://sequelize.org/master/
+4. Visual Studio Code
+https://code.visualstudio.com/
+=> My VSCODE Settings
+https://gist.github.com/Noman5237/b8c6be095dbbf7eb75ddcf98020fb011
+5. Postman
+https://www.postman.com/
+6. Graph API
+https://developers.facebook.com/docs/graph-api/
+6i. Send Api
+https://developers.facebook.com/docs/messenger-platform/reference/send-api/
+
