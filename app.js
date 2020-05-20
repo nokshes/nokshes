@@ -1,4 +1,3 @@
-
 /**
  * This file is the main NodeJS App's Entry Point
  */
@@ -9,9 +8,10 @@ const express = require("express");
 const app = express();
 
 // Open connection to database and load the models
-const {connect} = require("./dbApi/connection.js");
+const { connect, connectLocalhost } = require("./dbApi/connection.js");
+// connectLocalhost("SA", "Noman7692");
 connect();
-const {loadModels} = require("./dbApi/models/loadModels.js");
+const { loadModels } = require("./dbApi/models/loadModels.js");
 loadModels();
 
 /**
@@ -28,9 +28,10 @@ app.use("/basicUser", basicUser);
 // Initialize Session IDs Map
 global.sessions = {};
 //automatically clean up expired session ids
-const {autoSessionIdsCleaner} = require("./util/session.js")
+const { autoSessionIdsCleaner } = require("./util/session.js");
 setInterval(autoSessionIdsCleaner, 3000000);
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`App listening at http://localhost:${PORT}`))
-
+app.listen(PORT, () =>
+  console.log(`App listening at http://localhost:${PORT}`)
+);

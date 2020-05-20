@@ -1,68 +1,78 @@
-
-const {getPublicProfile} = require("../../graphApi/get.js");
-const {sendReqPostCard} = require("../../graphApi/post.js");
+const { getPublicProfile } = require("../../graphApi/get.js");
+const { sendReqPostCard } = require("../../graphApi/post.js");
 const {
-	getUserByPsId, getUserByUnId,
-	getClassAdmins, getSeniorAdmins
+  getUserByPsId,
+  getUserByUnId,
+  getClassAdminPsIds,
+  getSeniorAdminPsIds,
 } = require("../../dbApi/helper.js");
+
+const { updateObject } = require("../../util/langHelper.js");
 
 const sequelize = global.sequelize;
 const User = sequelize.models.User;
 
 const register = async (_psId, _unId, _isAdmin) => {
-	// TODO (May 09, 2020): Validate the correctness of universityId 
+  // TODO (May 09, 2020): Validate the correctness of universityId
+  let message;
+  try {
+    const registeredUser = await getUserByUnId(_unId);
+    if (registeredUser) {
+      if (registeredUser.psId == _psId) {
+        message = "You're already registered.";
+      } else {
+        message = `There is already a registered user with University ID: ${_unId}`;
+      }
+      return message;
+    }
 
-	let message;
-	const registeredUser = await getUserByUnId(_unId);
-	if (registeredUser) {
-		if (registeredUser.psId == _psId) {
-			message = "You're already registered.";
-		} else {
-			message = `There is already a registered user with University ID: ${_unId}`;
-		}
-		return message;
-	}
+    const user = await getUserByPsId(_psId);
+    if (user.regStatus == 2) {
+      message = "Your previous registration application is already PENDING.";
+      return message;
+    }
 
-	const user = await getUserByPsId(_psId);
-	if (user && user.regStatus == 2) {
-		message = "Your previous registration application is already PENDING.";
-		return message;
-	}
+    // find the Admin who is capable of approving his ID, i.e CR or more higher authority
+    let adminPsIds = await getClassAdminPsIds(_unId);
+    if (_isAdmin && adminPsIds.length > 1) {
+      message =
+        "There are already sufficient number of registered admins for your class." +
+        "Your registration will be processed as a regular student.";
+    } else if (!_isAdmin && adminPsIds.length >= 1) {
+      message = "Your registration will be processed as a regular student.";
+    } else if (!_isAdmin && adminPsIds.length < 1) {
+      message =
+        "Your class doesn't have enough registered admins to review your application.";
+      return message;
+    } else {
+      adminPsIds = await getSeniorAdminPsIds(_unId);
+      message = "Your registration will be processed as an administrator.";
+    }
 
-	// find the Admin who is capable of approving his ID, i.e CR or more higher authority
-	let admins = await getClassAdmins(_unId);
-	if (_isAdmin && admins.length > 1) {
-		message = "There are already sufficient number of registered admins for your class."
-			+ "Your registration will be processed as a regular student.";
-	} else if (!_isAdmin && admins.length >= 1) {
-		message = "Your registration will be processed as a regular student.";
-	} else if (!_isAdmin && admins.length < 1) {
-		message = "Your class doesn't have enough registered admins to review your application.";
-		return message;
-	} else {
-		admins = await getSeniorAdmins(_unId);
-		message = "Your registration will be processed as an administrator.";
-	}
+    const profile = await getPublicProfile(_psId);
+    profile.unId = _unId;
 
-	// TODO: remove the following line of code and use the 'user' variable fetched from the database
-	const profile = await getPublicProfile(_psId);
-	profile.unId = _unId;
-	await User.update({
-		unId: _unId,
-		isAdmin: _isAdmin,
-		regStatus: 2
-	}, {
-		where: {
-			psId: _psId
-		}
-	});
+    // Update the database according to the profile
+    updateObject(user, {
+      firstName: profile.first_name,
+      lastName: profile.last_name,
+      unId: _unId,
+      isAdmin: _isAdmin,
+      regStatus: 2,
+    });
+    await user.save();
 
-	await sendReqPostCard(profile, admins[Math.floor(Math.random() * admins.length)].psId);
-	message += "Thank you for being patient. Your registration has been processed.";
-
-	return message;
-
+    await sendReqPostCard(
+      profile,
+      adminPsIds[Math.floor(Math.random() * adminPsIds.length)].psId
+    );
+    message +=
+      "Thank you for being patient. Your registration has been processed.";
+  } catch (err) {
+    message = "Something went wrong during processing your request.";
+    console.log(err);
+  }
+  return message;
 };
 
-module.exports = {register};
-
+module.exports = { register };
